@@ -33,4 +33,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: ./gradlew build sonarqube --info
+        run: ./gradlew build sonarqube -Dsonar.pullrequest.branch=$BITRISE_GIT_BRANCH -Dsonar.pullrequest.key=$BITRISE_PULL_REQUEST
+          -Dsonar.pullrequest.base=$BITRISEIO_GIT_BRANCH_DEST -Dsonar.pullrequest.provider=github
+          -Dsonar.pullrequest.github.repository=tinyjunhub/testpublicmonorepo -Dsonar.scm.provider=git
