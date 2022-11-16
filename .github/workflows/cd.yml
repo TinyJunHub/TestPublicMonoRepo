@@ -3,6 +3,7 @@ on:
   pull_request_target:
     branches:
       - 'test-pull-request-target-actions'
+      - 'main'
 jobs:
   build:
     name: Build and analyze
