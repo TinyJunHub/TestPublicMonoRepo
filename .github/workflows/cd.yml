@@ -2,7 +2,7 @@ name: SonarCloud
 on:
   pull_request:
     branches:
-      - 'main'
+      - 'test-pull-request-target-actions'
 
 jobs:
   build:
