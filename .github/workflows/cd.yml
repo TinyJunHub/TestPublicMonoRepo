@@ -2,7 +2,7 @@ name: SonarCloud
 on:
   pull_request:
     branches:
-      - 'main'
+      - 'main2'
 jobs:
   build:
     name: Build and analyze
