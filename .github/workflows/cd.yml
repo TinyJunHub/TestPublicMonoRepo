@@ -1,8 +1,6 @@
 name: SonarCloud
 on:
   pull_request_target:
-    types:
-      - opened
     branches:
       - 'test-pull-request-target-actions'
 jobs:
