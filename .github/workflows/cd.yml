@@ -9,7 +9,7 @@ on:
 #    types: [opened, synchronize, reopened]
   pull_request:
     branches:
-      - 'dependabot/**'
+      - '!dependabot/**'
 jobs:
   build:
     name: Build and analyze
