@@ -7,8 +7,9 @@ on:
 #    types: [opened, synchronize, reopened]
   pull_request_target:
 #    types: [opened, synchronize, reopened]
+  pull_request:
     branches:
-      - main
+      - 'dependabot/**'
 jobs:
   build:
     name: Build and analyze
